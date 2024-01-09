@@ -238,4 +238,42 @@ nav .primary-cta {
 
 /* END 4th sectiion rules */
 
+/* 5th sectiion rules */
+
+.about-us {
+    background-color: white;
+}
+
+
+
+.about-us .row {
+    gap: 45px;
+
+    margin-top: 90px;
+    margin-bottom: 80px;
+
+}
+
+.about-us .col {
+
+
+    /* test  dimensioni*/
+    width: 310px;
+    height: 400px;
+
+    border: black 1px dashed;
+    border-radius: 20px;
+
+    /* test  allineamento verticale*/
+    justify-content: center;
+
+}
+
+.about-us h2 {
+
+    color: #9792E4;
+}
+
+/* END 5th sectiion rules */
+
 /* END Main rules */
