@@ -17,6 +17,11 @@ footer {
     display: flex;
 }
 
+.row {
+    flex-direction: column;
+    align-items: center;
+}
+
 /* END Common rules */
 
 /* Header rules */
@@ -63,3 +68,43 @@ nav .primary-cta {
 
 
 /* END Header rules */
+
+/* Main rules */
+
+/* 1st sectiion rules */
+
+.features {
+    background-color: white;
+}
+
+.features .row {
+    gap: 25px;
+
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.features .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 30px;
+
+    background-color: #B5DEFF;
+    border-radius: 20px;
+
+    /* test  dimensioni*/
+    width: 310px;
+    height: 360px;
+
+    /* test  allineamento verticale*/
+    justify-content: center;
+
+}
+
+
+
+/* END 1st sectiion rules */
+
+/* END Main rules */
