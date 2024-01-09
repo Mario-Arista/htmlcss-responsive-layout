@@ -13,6 +13,11 @@ footer {
     width: 100%;
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
 .flex {
     display: flex;
 }
@@ -59,12 +64,6 @@ nav {
 
 }
 
-nav,
-.logo {
-    /* test */
-    background-color: #B5DEFF;
-}
-
 .logo img {
     width: 100%;
 }
@@ -92,7 +91,7 @@ nav ul {
 }
 
 .features .col {
-    
+    justify-content: flex-start;
     gap: 30px;
 
     background-color: #B5DEFF;
@@ -100,12 +99,64 @@ nav ul {
 
     /* test  dimensioni*/
     width: 310px;
-    height: 360px;
-
-    /* test  allineamento verticale*/
-    justify-content: center;
-
 }
+
+.features .col:first-child {
+    justify-content: space-between;
+}
+
+.features .col div {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.features h3 {
+
+    padding-bottom: 40px;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #3D84FD;
+    
+}
+
+.features p {
+
+    padding-bottom: 35px;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+
+    color: #5A6E7E;
+     
+}
+
+.features i {
+    padding-top: 30px;
+
+    font-size: 60px;
+    color: #3D84FD;
+}
+
+.features .col:first-child h3 {
+    padding-top: 40px;
+    
+}
+
+.features .col:first-child img {
+    display: block;
+    width: 200px;
+    
+}
+
+
 
 
 /* END 1st sectiion rules */
