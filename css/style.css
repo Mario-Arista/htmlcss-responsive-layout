@@ -20,12 +20,17 @@ footer {
 .row {
     flex-direction: column;
     align-items: center;
+    
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 /* END Common rules */
@@ -313,4 +318,26 @@ footer .bottom-footer div:first-child {
 }
 
 /* END Footer rules */
+
+/* Media querries */
+
+/* For Tablet (from 480 to 767) */
+
+@media screen and (min-width: 480px) {
+    
+}
+
+/* For Laptop (from 768 to 991 ) */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* For Dekstop (from 992 to infinite ) */
+
+@media screen and (min-width: 992px) {
+    
+}
+
+/* END Media querries */
 
