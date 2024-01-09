@@ -231,9 +231,8 @@ nav .primary-cta {
 
 }
 
-.benefits .col:last-child {
-    margin-bottom: 60px;
-
+.benefits .row {
+    padding-bottom: 60px;
 }
 
 
