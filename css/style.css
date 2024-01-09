@@ -127,7 +127,7 @@ nav .primary-cta {
 
     /* test  dimensioni*/
     width: 310px;
-    height: 360px;
+    height: 610px;
 
     /* test  allineamento verticale*/
     justify-content: center;
@@ -151,7 +151,48 @@ nav .primary-cta {
 
 /* 3rd sectiion rules */
 
+.testimonials {
+    background-color: white;
+}
 
+.testimonials .row {
+    gap: 30px;
+    margin-top: 65px;
+
+}
+
+.testimonials .col {
+
+    gap: 35px;
+    border-radius: 20px;
+
+    background-color: #837FC6;
+
+    /* test  dimensioni*/
+    width: 310px;
+    height: 500px;
+
+    /* test  allineamento verticale*/
+    justify-content: center;
+
+}
+
+.testimonials .col:first-child {
+
+    background-color: transparent;
+    margin-top: 65px;
+
+    /* test  dimensioni*/
+    height: 330px;
+    
+    border: black 1px dashed;
+
+}
+
+.testimonials .col:last-child {
+    margin-bottom: 65px;
+
+}
 /* END 3rd sectiion rules */
 
 /* END Main rules */
