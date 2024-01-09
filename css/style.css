@@ -195,4 +195,47 @@ nav .primary-cta {
 }
 /* END 3rd sectiion rules */
 
+/* 4th sectiion rules */
+
+.benefits {
+    background-color: #9792E4;
+}
+
+.benefits h2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    color: white;
+    text-align: center;
+}
+
+.benefits .row {
+    gap: 30px;
+
+}
+
+.benefits .col {
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    /* test  dimensioni*/
+    width: 310px;
+    height: 400px;
+    gap: 35px;
+
+    /* test  allineamento verticale*/
+    justify-content: center;
+
+}
+
+.benefits .col:last-child {
+    margin-bottom: 60px;
+
+}
+
+
+/* END 4th sectiion rules */
+
 /* END Main rules */
