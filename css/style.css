@@ -22,6 +22,12 @@ footer {
     align-items: center;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* END Common rules */
 
 /* Header rules */
@@ -47,7 +53,6 @@ nav {
     margin-left: 30px;
     margin-top: 13px;
     margin-bottom: 16px;
-
 
 }
 
@@ -85,9 +90,6 @@ nav .primary-cta {
 }
 
 .features .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
     gap: 30px;
 
@@ -104,7 +106,52 @@ nav .primary-cta {
 }
 
 
-
 /* END 1st sectiion rules */
+
+/* 2nd sectiion rules */
+
+.planning {
+    background-color: #7672B3;
+}
+
+.planning .row {
+    gap: 35px;
+    margin-top: 65px;
+
+}
+
+.planning .col {
+
+    gap: 35px;
+    border-radius: 20px;
+
+    /* test  dimensioni*/
+    width: 310px;
+    height: 360px;
+
+    /* test  allineamento verticale*/
+    justify-content: center;
+
+}
+
+.planning .col:first-child {
+    margin-top: 65px;
+
+    /* test */
+    border: black 1px dashed;
+}
+
+.planning .col:last-child {
+    margin-bottom: 65px;
+
+    background-color: white;
+}
+
+/* END 2nd sectiion rules */
+
+/* 3rd sectiion rules */
+
+
+/* END 3rd sectiion rules */
 
 /* END Main rules */
