@@ -277,3 +277,40 @@ nav .primary-cta {
 /* END 5th sectiion rules */
 
 /* END Main rules */
+
+/* Footer rules */
+
+/* TOP Footer rules */
+
+footer .top-footer {
+    text-align: center;
+
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    background-color: #9792E4;
+}
+
+/* BOTTOM Footer rules */
+
+footer .bottom-footer {
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #333333;
+}
+
+footer .bottom-footer div {
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .bottom-footer div:first-child {
+    margin-bottom: 65px;
+}
+
+/* END Footer rules */
+
