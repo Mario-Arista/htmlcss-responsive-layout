@@ -6,6 +6,8 @@
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -13,35 +15,39 @@
     <!-- Header with logo, nav, cta and icon -->
     <header>
 
-        <!-- Brand website -->
-        <div class="logo">
+        <div class="row-header flex">
 
-        </div>
+            <!-- Brand website -->
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo website">
+            </div>
 
-        <!-- Nav bar hidden in mobile version -->
-        <nav>
-            <div class="menu-mobile">
-
-                <!-- collapsed menu for mobile version -->
+            <!-- Nav bar hidden in mobile version -->
+            <nav>
                 <div class="menu-mobile">
+
+                    <!-- collapsed menu for mobile version -->
+                    <div class="menu-collapsed flex">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+
+                    <!-- Hidden in mobile version -->
+                    <ul>
+                        <li>Planning</li>
+                        <li>Testimonials</li>
+                        <li></li>
+                        <li></li>
+                        </ul>
+                </div>
+
+                <!-- CTA hidden in mobile version -->
+                <div class="primary-cta header">
 
                 </div>
 
-                <!-- Hidden in mobile version -->
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    </ul>
-            </div>
-        </nav>
-
-        <!-- CTA hidden in mobile version -->
-        <div class="primary-cta header">
-
+            </nav>
         </div>
-        
+
     </header>
 
         <!-- Main with 5 section -->
@@ -53,7 +59,7 @@
         <!-- 2nd section planning: 2 col-containers  -->
         <section></section>
 
-        <!-- 3rd section partners: text + 3 col-containers -->
+        <!-- 3rd section testimonials: text + 3 col-containers -->
         <section></section>
 
         <!-- 4th section benefits: text + 6 col-containers  -->

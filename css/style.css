@@ -4,3 +4,62 @@
     box-sizing: border-box;
 }
 /* Reset Rules */
+
+/* Common rules */
+
+header,
+section,
+footer {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+/* END Common rules */
+
+/* Header rules */
+
+header {
+    background-color: #3D84FD;
+}
+
+.row-header {
+    justify-content: space-between;
+}
+
+nav {
+    margin-right: 30px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+
+    color: white;
+}
+
+.logo {
+
+    margin-left: 30px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+
+
+}
+
+nav,
+.logo {
+    /* test */
+    background-color: #B5DEFF;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav ul,
+nav .primary-cta {
+    display: none;
+}
+
+
+/* END Header rules */
