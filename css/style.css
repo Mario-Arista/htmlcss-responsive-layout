@@ -164,7 +164,7 @@ nav ul {
 /* 2nd sectiion rules */
 
 .planning {
-    background-color: #7672B3;
+    background-color: #9593E6;
 }
 
 .planning .row {
@@ -175,29 +175,94 @@ nav ul {
 }
 
 .planning .col {
-
+    justify-content: flex-start;
     gap: 35px;
     border-radius: 20px;
 
     /* test  dimensioni*/
     width: 310px;
     height: 610px;
-
-    /* test  allineamento verticale*/
-    justify-content: center;
-
+    
 }
 
-.planning .col:first-child {
+.planning .col div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-    /* test */
-    border: black 1px dashed;
+.planning img {
+    display: block;
+
+    padding-top: 35px;
+    padding-bottom: 40px;
+
+    width: 240px;
+}
+
+.planning p {
+    font-size: 16px;
+}
+
+.planning .col:first-child h3 {
+
+    padding-bottom: 55px;
+    font-size: 32px;
+    font-size: bold;
+
+    color: white;
+    
+}
+
+.planning .col:first-child p {
+    font-size: 16px;
+    line-height: 30px;
+
+    color: white;
+    font-size: bold;
 }
 
 .planning .col:last-child {
 
+    margin-top: 35px;
+
+    text-align: center;
+
     background-color: white;
+    color: black;
 }
+
+.planning .col:last-child h3 {
+
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.planning .col:last-child p {
+
+    padding-bottom: 35px;
+    font-size: 16px;
+    line-height: 30px;
+    
+    color: black;
+    font-style: italic;
+}
+
+#arrow-colored {
+    margin: 0 auto;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #9792E4;
+}
+
+.planning .col:last-child i {
+    font-size: 25px;
+    color: black;
+}
+
+
 
 /* END 2nd sectiion rules */
 
