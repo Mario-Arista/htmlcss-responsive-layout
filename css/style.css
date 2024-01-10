@@ -323,16 +323,18 @@ nav ul {
 
 }
 
+
+
 /* First block */
 
-.testimonials .col:first-child {
+.testimonials .test-intro {
     justify-content: space-between;
     background-color: transparent;
     margin-top: 65px;
     text-align: center;
 
 }
-.testimonials .col:first-child div {
+.testimonials .test-intro div:first-child {
     padding-bottom: 40px;
 
     letter-spacing: 1px;
@@ -347,7 +349,7 @@ nav ul {
     color: #9792E4;
 }
 
-.testimonials .col:first-child p {
+.testimonials .test-intro p {
     
     font-size: 18px;
     line-height: 30px;
@@ -387,10 +389,6 @@ nav ul {
 
 }
 
-.testimonials .testim-quote {
-    padding-bottom: 35px;
-}
-
 .testimonials .testim-quote p {
     display: inline;
 
@@ -404,6 +402,7 @@ nav ul {
 
 .testimonials .testim-name {
     margin-bottom: 35px;
+    margin-top: 35px;
 
     font-size: 18px;
     font-weight: bold;
@@ -515,18 +514,15 @@ nav ul {
 
 }
 
-.about-us .col {
-    justify-content: space-around;
-    align-content: flex-start;
-    gap: 45px;
-    border-radius: 20px;
-
-}
 
 /* First block */
 
 .about-us .col:first-child {
     margin-bottom: 65px;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 45px;
+    border-radius: 20px;
     
 }
 
@@ -551,12 +547,17 @@ nav ul {
 
 .about-us .col:last-child {
     position: relative;
+    gap: 20px;
 }
+
+.about-us .col:last-child div {
+    text-align: left;
+}
+
 
 .about-us img {
     position: relative;
-    right: 28%;
-    
+    right: 30%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -616,19 +617,22 @@ nav ul {
 
 /* TOP Footer rules */
 
+
 footer .top-footer {
     text-align: center;
 
     padding-top: 65px;
     padding-bottom: 65px;
 
+
     background-color: #9792E4;
+
 }
 
 .top-footer div:first-child {
-    max-width: 310px;
-
+    max-width: 60%;
     margin: 0 auto;
+
 }
 
 .top-footer div:nth-of-type(1) {
@@ -667,6 +671,7 @@ footer .top-footer {
 
     margin-bottom: 35px;
     background-color: white;
+    
     border: none;
     padding: 22px 75px;
 
@@ -681,9 +686,8 @@ footer .top-footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 4px;
-    color: #9792E4;
-    
-    
+    color: #9593E6;
+
 }
 
 .top-footer div:last-of-type {
@@ -729,9 +733,15 @@ footer .top-footer {
 
 /* Media querries */
 
-/* For Tablet (from 480 to 767) */
+/* For Tablet (from 481 to 767) */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
+
+    /* Changing rules for all rows */
+
+    .row {
+     min-width: 95%;
+    }
 
     /* 1st section with 2 rows */
     .features .row {
@@ -741,22 +751,55 @@ footer .top-footer {
         flex-wrap: wrap;
     }
 
+
     .features .col {
         width: calc(33% - 25px);
+        
     }
+
+    .h-tablet {
+        height: 100%;
+    }
+
 
     .features .col:first-child {
         width: calc(66% - 25px);
     }
 
-    /* 2st and 3rd section: changing width */
+    /* 2st section changing image sizing */
 
-    .planning .col,
+    .planning .col div:first-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .planning img {
+        width: 75%;
+    }
+    /* 3st section changing flex direction */
+
     .testimonials .col {
-        width: 95%;
+        flex-direction: row;
+    }
+
+    .testimonials .testim-face {
+        padding-left: 10px;
+    }
+
+    .testimonials .testim-quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .testimonials .testim-name {
+        margin-bottom: 0px;
     }
 
     /* 4th section with 3 rows */
+
     .benefits .row {
         flex-direction: row;
         justify-content: center;
@@ -765,14 +808,15 @@ footer .top-footer {
     }
 
     .benefits .col {
-    width: calc(100% / 2 - 30px);
+        width: calc(100% / 2 - 30px);
     }
+
 
     /* 5th section with 2 rows */
     .about-us .row {
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        
+        gap: 70px;
 
         padding-left: 10px;
         padding-right: 10px;
@@ -782,8 +826,26 @@ footer .top-footer {
         flex-grow: 1;
     }
 
-    .about-us .row .col:last-child {
-        width: 240px;
+
+    .about-us .col:last-child {
+ 
+    }
+
+    .about-us img {
+        right: 0%;
+    }
+    .about-us .about-button {
+        right: 10%;
+    }
+    .about-us iconify-icon {
+
+    }
+
+    /* TOP Footer */
+
+    .top-footer div:first-child {
+        max-width: 90%;
+    
     }
 }
 
