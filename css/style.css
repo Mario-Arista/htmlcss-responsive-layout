@@ -340,7 +340,7 @@ nav ul {
 
 }
 
-.testimonials h3 {
+.testimonials h2 {
     font-size: 30px;
     padding-bottom: 50px;
     color: #9792E4;
@@ -420,18 +420,25 @@ nav ul {
 }
 
 .benefits h2 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px 40px;
 
+    font-size: 30px;
     color: white;
     text-align: center;
 }
+
+
 
 .benefits .row {
     gap: 30px;
 }
 
 .benefits .col {
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 35px;
+
+    padding: 45px 30px 30px 30px;
 
     border-radius: 20px;
 
@@ -439,19 +446,55 @@ nav ul {
 
     /* test  dimensioni*/
     width: 310px;
-    height: 400px;
-    gap: 35px;
-
-    /* test  allineamento verticale*/
-    justify-content: center;
-
 }
 
 .benefits .row {
     padding-bottom: 60px;
 }
 
+.benefits .ben-number {
+    font-size: 50px;
+    font-weight: bold;
 
+    color: #9593E6;
+}
+
+.benefits .ben-title {
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #9593E6;
+}
+
+.benefits p {
+
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #818181;
+    font-size: bold;
+}
+
+.benefits .ben-button {
+    background-color: #9792E4;
+    border: none;
+    padding: 15px 45px;
+
+    border-radius: 30px;
+}
+
+
+.benefits .ben-button a {
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    
+
+    color: white;
+    
+}
 /* END 4th sectiion rules */
 
 /* 5th sectiion rules */
