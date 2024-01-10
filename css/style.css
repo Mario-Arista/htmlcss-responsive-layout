@@ -188,7 +188,7 @@ nav ul {
 
 /* END 1st sectiion rules */
 
-/* 2nd sectiion rules */
+/* 2nd section rules */
 
 .planning {
     background-color: #9593E6;
@@ -208,7 +208,6 @@ nav ul {
 
     /* test  dimensioni*/
     width: 310px;
-    height: 610px;
     
 }
 
@@ -275,8 +274,8 @@ nav ul {
     font-style: italic;
 }
 
-#arrow-colored {
-
+.arrow-colored {
+    position: relative;
     margin: 0 auto;
 
     width: 50px;
@@ -284,16 +283,22 @@ nav ul {
     border-radius: 50%;
 
     background-color: #9792E4;
+
+    margin-bottom: 30px;
 }
 
 .planning .col:last-child i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     font-size: 25px;
     color: black;
 }
 
-
-
 /* END 2nd sectiion rules */
+
 
 /* 3rd sectiion rules */
 
@@ -303,42 +308,109 @@ nav ul {
 
 .testimonials .row {
     gap: 30px;
-    margin-top: 65px;
 
 }
 
 .testimonials .col {
-
-    gap: 35px;
+    justify-content: center;
     border-radius: 20px;
 
-    background-color: #837FC6;
+    background-color: #9792E4;
 
-    /* test  dimensioni*/
+    /* test dimensioni*/
     width: 310px;
-    height: 500px;
-
-    /* test  allineamento verticale*/
-    justify-content: center;
 
 }
+
+/* First block */
 
 .testimonials .col:first-child {
-
+    justify-content: space-between;
     background-color: transparent;
     margin-top: 65px;
-
-    /* test  dimensioni*/
-    height: 330px;
-    
-    border: black 1px dashed;
+    text-align: center;
 
 }
+.testimonials .col:first-child div {
+    padding-bottom: 40px;
+
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 16px;
+
+}
+
+.testimonials h3 {
+    font-size: 30px;
+    padding-bottom: 50px;
+    color: #9792E4;
+}
+
+.testimonials .col:first-child p {
+    
+    font-size: 18px;
+    line-height: 30px;
+
+    color: black;
+    font-size: bold;
+}
+
+/* Last 3 blocks */
 
 .testimonials .col:last-child {
     margin-bottom: 65px;
 
 }
+.testimonials .testim-face {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.testimonials img {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.testimonials .testim-quote {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.testimonials .testim-quote {
+    padding-bottom: 35px;
+}
+
+.testimonials .testim-quote p {
+    display: inline;
+
+    
+    font-size: 18px;
+    line-height: 30px;
+
+    color: white;
+    font-size: bold;
+}
+
+.testimonials .testim-name {
+    margin-bottom: 35px;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
 /* END 3rd sectiion rules */
 
 /* 4th sectiion rules */
