@@ -68,10 +68,26 @@ nav {
     width: 100%;
 }
 
+
+nav .nav-button {
+    background-color: white;
+    border: none;
+    padding: 10px 10px;
+
+    border-radius: 30px;
+}
+
+
+nav .nav-button a {
+    text-decoration: none;
+
+    color:black;
+    
+}
+
 nav ul {
     display: none;
 }
-
 
 /* END Header rules */
 
@@ -89,7 +105,7 @@ nav ul {
     padding-top: 50px;
     padding-bottom: 80px;
 
-    max-width: 310px;
+    width: 310px;
     margin: 0 auto;
 }
 
@@ -106,10 +122,10 @@ nav ul {
     justify-content: space-between;
 }
 
-.features .button-nav {
+.features .feat-button {
     background-color: #3D84FD;
     border: none;
-    padding: 12px 50px;
+    padding: 12px 35px;
 
     border-radius: 30px;
 
@@ -121,17 +137,24 @@ nav ul {
     font-size: 18px;
 }
 
-.features .button-nav a {
+.features .feat-button a {
     text-decoration: none;
     padding-left: 4px;
 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     
 
     color: white;
     
+}
+
+.features .col:first-child img {
+    display: block;
+
+    margin-top: 35px;
+    width: 200px;
     
 }
 
@@ -168,6 +191,12 @@ nav ul {
      
 }
 
+.features .icon-feat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .features iconify-icon {
     padding-top: 30px;
 
@@ -181,11 +210,7 @@ nav ul {
     
 }
 
-.features .col:first-child img {
-    display: block;
-    width: 200px;
-    
-}
+
 
 /* END 1st sectiion rules */
 
@@ -200,7 +225,7 @@ nav ul {
     padding-top: 65px;
     padding-bottom: 65px;
 
-    max-width: 310px;
+    width: 310px;
     margin: 0 auto;
 
 }
@@ -310,7 +335,7 @@ nav ul {
 .testimonials .row {
     gap: 30px;
 
-    max-width: 310px;
+    width: 310px;
     margin: 0 auto;
 
 }
@@ -430,7 +455,7 @@ nav ul {
 .benefits .row {
     gap: 30px;
         
-    max-width: 310px;
+    width: 310px;
     margin: 0 auto;
 }
 
@@ -507,7 +532,7 @@ nav ul {
 .about-us .row {
     margin: 0 auto;
     
-    max-width: 310px;
+    width: 310px;
 
     margin-top: 90px;
     margin-bottom: 80px;
@@ -644,7 +669,6 @@ footer .top-footer {
 
 .top-footer div:nth-of-type(2) {
     margin-bottom: 70px;
-    color: white;
     font-size: 30px;
     font-weight: bold;
     
@@ -672,8 +696,9 @@ footer .top-footer {
     margin-bottom: 35px;
     background-color: white;
     
+    
     border: none;
-    padding: 22px 75px;
+    padding: 22px 50px;
 
     border-radius: 30px;
 }
@@ -683,11 +708,12 @@ footer .top-footer {
     text-decoration: none;
     padding-left: 4px;
 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 4px;
-    color: #9593E6;
+    letter-spacing: 2px;
 
+    color: #9792E4;
+    
 }
 
 .top-footer div:last-of-type {
@@ -696,9 +722,7 @@ footer .top-footer {
     color: white;
 }
 
-.top-footer div:last-of-type a {
-    color: white;
-}
+
 
 /* BOTTOM Footer rules */
 
@@ -733,9 +757,9 @@ footer .top-footer {
 
 /* Media querries */
 
-/* For Tablet (from 481 to 767) */
+/* For Tablet (from 480 to 767) */
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
 
     /* Changing rules for all rows */
 
@@ -746,8 +770,6 @@ footer .top-footer {
     /* 1st section with 2 rows */
     .features .row {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -757,13 +779,12 @@ footer .top-footer {
         
     }
 
-    .h-tablet {
-        height: 100%;
+    .features .col:first-child {
+        width: calc(67% - 25px);
     }
 
-
-    .features .col:first-child {
-        width: calc(66% - 25px);
+    .features .clean-code {
+        justify-content: flex-start;
     }
 
     /* 2st section changing image sizing */
@@ -826,32 +847,25 @@ footer .top-footer {
         flex-grow: 1;
     }
 
-
-    .about-us .col:last-child {
- 
-    }
-
     .about-us img {
         right: 0%;
     }
     .about-us .about-button {
         right: 10%;
     }
-    .about-us iconify-icon {
 
-    }
-
-    /* TOP Footer */
-
-    .top-footer div:first-child {
-        max-width: 90%;
-    
-    }
 }
 
 /* For Laptop (from 768 to 991 ) */
 
 @media screen and (min-width: 768px) {
+
+    /* Changing rules for all rows */
+
+    .row {
+        width: 750px;
+        
+    }
 
     /* Changing rules for nav */
 
@@ -866,15 +880,9 @@ footer .top-footer {
 
     nav ul {
         display: flex;
+        align-items: center;
         gap: 30px;
         list-style: none;
-    }
-
-    /* Changing rules for all rows */
-
-    .row {
-        max-width: 750px;
-        margin: 0 auto;
     }
 
     /* 2nd section: in 1 row  */
@@ -887,8 +895,8 @@ footer .top-footer {
 
     .planning .col {
         width: calc(100% / 2 - 30px);
+        flex: 1;
     }
-
     /* 3nd section: in 1 row  */
     
     .testimonials .col {
@@ -901,11 +909,12 @@ footer .top-footer {
 
 @media screen and (min-width: 992px) {
     .row {
-        max-width: 1000px;
+        width: 1000px;
         margin: 0 auto;
 
     }
 }
+
 
 /* END Media querries */
 
