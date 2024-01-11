@@ -32,7 +32,6 @@ body {
     flex-direction: column;
     align-items: center;
 
-
 }
 
 /* END Common rules */
@@ -46,6 +45,9 @@ header {
 .row-header {
     justify-content: space-between;
     align-items: center;
+
+    width: 310px;
+    margin: 0 auto;
 }
 
 nav {
@@ -101,7 +103,6 @@ nav ul {
 
 .features .row {
     gap: 35px;
-
     padding-top: 50px;
     padding-bottom: 80px;
 
@@ -116,16 +117,28 @@ nav ul {
     background-color: #B5DEFF;
     border-radius: 20px;
 
+    width: 100%;
+
 }
 
 .features .col:first-child {
     justify-content: space-between;
 }
 
+.padd-elem {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#pallo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .features .feat-button {
     background-color: #3D84FD;
     border: none;
-    padding: 12px 35px;
+    padding: 12px 50px;
 
     border-radius: 30px;
 
@@ -152,15 +165,11 @@ nav ul {
 
 .features .col:first-child img {
     display: block;
+    margin: 0 auto;
 
     margin-top: 35px;
     width: 200px;
     
-}
-
-.features .col div {
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .features h3 {
@@ -392,6 +401,7 @@ nav ul {
 .testimonials .testim-face {
     padding-top: 30px;
     padding-bottom: 15px;
+
 }
 
 .testimonials img {
@@ -545,16 +555,14 @@ nav ul {
 .about-us .col:first-child {
     margin-bottom: 65px;
     justify-content: space-around;
-    align-content: flex-start;
+    align-items: stretch;
     gap: 45px;
     border-radius: 20px;
     
 }
 
 .about-us h2 {
-    position: relative;
-    right: 28%;
-    
+
     color: #9792E4;
     font-size: 36px;
 }
@@ -572,17 +580,14 @@ nav ul {
 
 .about-us .col:last-child {
     position: relative;
-    gap: 20px;
-}
+    align-items: stretch;
 
-.about-us .col:last-child div {
-    text-align: left;
+
+    gap: 20px;
 }
 
 
 .about-us img {
-    position: relative;
-    right: 30%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -608,9 +613,6 @@ nav ul {
 }
 
 .about-us .about-button {
-
-    position: relative;
-    right: 40%;
 
     background-color: #9792E4;
     border: none;
@@ -763,28 +765,41 @@ footer .top-footer {
 
     /* Changing rules for all rows */
 
-    .row {
-     min-width: 95%;
+    .row,
+    .row-header {
+     min-width: 90%;
     }
 
     /* 1st section with 2 rows */
     .features .row {
+        gap: 0px;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: stretch;
     }
 
-
     .features .col {
-        width: calc(33% - 25px);
+        gap: 0px;
+        width: calc(33% - 22px);
         
     }
 
     .features .col:first-child {
-        width: calc(67% - 25px);
+        display: flex;
+
+
+        width: calc(66% - 11px);
+        margin-bottom: 35px;
     }
 
-    .features .clean-code {
-        justify-content: flex-start;
+    .features .col:nth-of-type(2) {
+        margin-bottom: 35px;
+    }
+
+    .features .col:nth-child(2),
+    .features .col:nth-child(4),
+    .features .col:nth-child(5) {
+        margin-left: 35px;
     }
 
     /* 2st section changing image sizing */
@@ -805,13 +820,16 @@ footer .top-footer {
     }
 
     .testimonials .testim-face {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .testimonials .testim-quote {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
         
     }
 
@@ -824,7 +842,7 @@ footer .top-footer {
     .benefits .row {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: wrap;
     }
 
@@ -836,6 +854,7 @@ footer .top-footer {
     /* 5th section with 2 rows */
     .about-us .row {
         flex-direction: row;
+        align-items: flex-start;
         
         gap: 70px;
 
@@ -847,12 +866,15 @@ footer .top-footer {
         flex-grow: 1;
     }
 
-    .about-us img {
-        right: 0%;
+    .about-us .row .col:last-child div {
+        position: relative;
     }
-    .about-us .about-button {
-        right: 10%;
+    .about-us iconify-icon {
+        position: absolute;
+        top: 0px;
+        right: 5%;
     }
+
 
 }
 
@@ -862,8 +884,9 @@ footer .top-footer {
 
     /* Changing rules for all rows */
 
-    .row {
-        width: 750px;
+    .row,
+    .row-header {
+        max-width: 750px;
         
     }
 
@@ -889,14 +912,20 @@ footer .top-footer {
 
     .planning .row {
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-end;
+        justify-content: space-around;
+        gap: 0px;
+        
     }
 
-    .planning .col {
-        width: calc(100% / 2 - 30px);
-        flex: 1;
+    .planning .col:first-child {
+        width: 70%;
     }
+
+    .planning .col:last-child {
+        width: 30%;
+    }
+
     /* 3nd section: in 1 row  */
     
     .testimonials .col {
@@ -908,8 +937,9 @@ footer .top-footer {
 /* For Dekstop (from 992 to infinite ) */
 
 @media screen and (min-width: 992px) {
-    .row {
-        width: 1000px;
+    .row,
+    .row-header {
+        max-width: 1000px;
         margin: 0 auto;
 
     }
@@ -917,4 +947,6 @@ footer .top-footer {
 
 
 /* END Media querries */
+
+
 
